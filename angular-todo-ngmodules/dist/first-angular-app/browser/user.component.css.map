@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/user/user.component.css"],
+  "sourcesContent": ["button {\n  display: flex;\n  align-items: center;\n  gap: 0.5rem;\n  padding: 0.35rem 0.5rem;\n  background-color: #433352;\n  color: #c3b3d1;\n  border: none;\n  font: inherit;\n  cursor: pointer;\n  width: 100%;\n  min-width: 10rem;\n  text-align: left;\n}\n\nbutton:hover,\nbutton:active,\n.active {\n  background-color: #9965dd;\n  color: #150722;\n}\n\nimg {\n  width: 2rem;\n  object-fit: contain;\n  border-radius: 50%;\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);\n}\n\nspan {\n  margin: 0;\n  padding: 0;\n  font-size: 0.8rem;\n  font-weight: normal;\n}\n"],
+  "mappings": ";AAAA;AACE,WAAS;AACT,eAAa;AACb,OAAK;AACL,WAAS,QAAQ;AACjB,oBAAkB;AAClB,SAAO;AACP,UAAQ;AACR,QAAM;AACN,UAAQ;AACR,SAAO;AACP,aAAW;AACX,cAAY;AACd;AAEA,MAAM;AACN,MAAM;AACN,CAAC;AACC,oBAAkB;AAClB,SAAO;AACT;AAEA;AACE,SAAO;AACP,cAAY;AACZ,iBAAe;AACf,cAAY,EAAE,IAAI,IAAI,KAAK,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE;AACtC;AAEA;AACE,UAAQ;AACR,WAAS;AACT,aAAW;AACX,eAAa;AACf;",
+  "names": []
+}

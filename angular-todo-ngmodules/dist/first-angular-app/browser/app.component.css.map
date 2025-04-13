@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/app.component.css"],
+  "sourcesContent": ["main {\n  width: 90%;\n  max-width: 50rem;\n  margin: 2.5rem auto;\n  display: grid;\n  grid-auto-flow: row;\n  gap: 2rem;\n}\n\n#users {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  display: flex;\n  gap: 0.5rem;\n  overflow: auto;\n}\n\n@media (min-width: 768px) {\n  main {\n    margin: 4rem auto;\n    grid-template-columns: 1fr 3fr;\n  }\n\n  #users {\n    flex-direction: column;\n  }\n}\n"],
+  "mappings": ";AAAA;AACE,SAAO;AACP,aAAW;AACX,UAAQ,OAAO;AACf,WAAS;AACT,kBAAgB;AAChB,OAAK;AACP;AAEA,CAAC;AACC,cAAY;AACZ,UAAQ;AACR,WAAS;AACT,WAAS;AACT,OAAK;AACL,YAAU;AACZ;AAEA,OAAO,CAAC,SAAS,EAAE;AACjB;AACE,YAAQ,KAAK;AACb,2BAAuB,IAAI;AAC7B;AAEA,GAfD;AAgBG,oBAAgB;AAClB;AACF;",
+  "names": []
+}

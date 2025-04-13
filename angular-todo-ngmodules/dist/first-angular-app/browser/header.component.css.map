@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/components/header/header.component.css"],
+  "sourcesContent": ["header {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 1rem;\n  width: 90%;\n  max-width: 50rem;\n  margin: 0 auto 2rem auto;\n  text-align: center;\n  background: linear-gradient(\n    to bottom,\n    #2c0a4c,\n    #450d80\n  );\n  padding: 1rem;\n  border-bottom-right-radius: 12px;\n  border-bottom-left-radius: 12px;\n  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);\n}\n\nimg {\n  width: 3.5rem;\n  object-fit: contain;\n}\n\nh1 {\n  font-size: 1.25rem;\n  color: white;\n  margin: 0;\n  padding: 0;\n}\n\np {\n  margin: 0;\n  font-size: 0.8rem;\n  text-wrap: balance;\n}\n\n@media (min-width: 768px) {\n  header {\n    padding: 2rem;\n  }\n\n  img {\n    width: 4.5rem;\n  }\n\n  h1 {\n    font-size: 1.5rem;\n    margin: 0;\n    padding: 0;\n  }\n}\n"],
+  "mappings": ";AAAA;AACE,WAAS;AACT,kBAAgB;AAChB,eAAa;AACb,OAAK;AACL,SAAO;AACP,aAAW;AACX,UAAQ,EAAE,KAAK,KAAK;AACpB,cAAY;AACZ;AAAA,IAAY;AAAA,MACV,GAAG,MADO;AAAA,MAEV,OAFU;AAAA,MAGV;AAEF,WAAS;AACT,8BAA4B;AAC5B,6BAA2B;AAC3B,cAAY,EAAE,IAAI,IAAI,KAAK,CAAC,EAAE,CAAC,EAAE,CAAC,EAAE;AACtC;AAEA;AACE,SAAO;AACP,cAAY;AACd;AAEA;AACE,aAAW;AACX,SAAO;AACP,UAAQ;AACR,WAAS;AACX;AAEA;AACE,UAAQ;AACR,aAAW;AACX,aAAW;AACb;AAEA,OAAO,CAAC,SAAS,EAAE;AACjB;AACE,aAAS;AACX;AAEA;AACE,WAAO;AACT;AAEA;AACE,eAAW;AACX,YAAQ;AACR,aAAS;AACX;AACF;",
+  "names": []
+}
