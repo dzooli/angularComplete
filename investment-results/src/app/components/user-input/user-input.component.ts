@@ -10,10 +10,10 @@ import { InvestmentReturn } from '../../interfaces/investment-return';
   styleUrls: ['./user-input.component.css'],
 })
 export class UserInputComponent {
-  @Input() initialInvestment: number = 0;
-  @Input() annualInvestment: number = 0;
-  @Input() interestRate: number = 0;
-  @Input() duration: number = 0;
+  @Input() initialInvestment: number = 10000;
+  @Input() annualInvestment: number = 1000;
+  @Input() interestRate: number = 4;
+  @Input() duration: number = 5;
   investmentResults: InvestmentReturn[] = [];
 
   calculateInvestmentResults() {
