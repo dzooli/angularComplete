@@ -1,0 +1,53 @@
+<form
+  class="user-input-form"
+  (ngSubmit)="calculateInvestmentResults()"
+  #investmentForm="ngForm"
+>
+  <div class="input-group">
+    <p>
+      <label for="investment-amount">Initial Investment Amount:</label>
+      <input
+        type="number"
+        id="investment-amount"
+        [(ngModel)]="initialInvestment"
+        name="initialInvestment"
+        required
+      />
+    </p>
+    <p>
+      <label for="annual-investment-amount">Annual Investment Amount:</label>
+      <input
+        type="number"
+        id="annual-investment-amount"
+        [(ngModel)]="annualInvestment"
+        name="annualInvestment"
+        required
+      />
+    </p>
+  </div>
+
+  <div class="input-group">
+    <p>
+      <label for="interest-rate">Interest Rate (%):</label>
+      <input
+        type="number"
+        id="interest-rate"
+        [(ngModel)]="interestRate"
+        name="interestRate"
+        required
+      />
+    </p>
+    <p>
+      <label for="duration">Investment Duration (Years):</label>
+      <input
+        type="number"
+        id="duration"
+        [(ngModel)]="duration"
+        name="duration"
+        required
+      />
+    </p>
+  </div>
+
+  <button type="submit">Calculate</button>
+</form>

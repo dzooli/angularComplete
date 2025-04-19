@@ -4,11 +4,16 @@
 
 function calculateInvestmentResults() {
   const annualData = [];
+  const initialInvestment = 1000; // Example initial investment value
   let investmentValue = initialInvestment;
+  const annualInvestment = 500; // Example annual investment value
+
+  const duration = 10; // Example duration in years
+  const interestRate = 5; // Example expected return percentage
 
   for (let i = 0; i < duration; i++) {
     const year = i + 1;
-    const interestEarnedInYear = investmentValue * (expectedReturn / 100);
+    const interestEarnedInYear = investmentValue * (interestRate / 100);
     investmentValue += interestEarnedInYear + annualInvestment;
     const totalInterest =
       investmentValue - annualInvestment * year - initialInvestment;
