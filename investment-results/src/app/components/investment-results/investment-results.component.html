@@ -1,0 +1,29 @@
+@if (!investmentResults || investmentResults.length === 0) {
+<div class="notification">
+  Please enter some investment details and click "Calculate" to see the results.
+</div>
+} @else {
+<div>
+  <h2>Investment Results</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Investment Value</th>
+        <th>Total Interests</th>
+        <th>Total Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(result of investmentResults; track result.year) {
+      <tr>
+        <td>{{ result.year }}</td>
+        <td>{{ result.totalAmountInvested | currency }}</td>
+        <td>{{ result.totalInterest | currency }}</td>
+        <td>{{ result.valueEndOfYear | currency }}</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>
+}
