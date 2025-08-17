@@ -1,8 +1,4 @@
-<form
-  class="user-input-form"
-  (ngSubmit)="calculateInvestmentResults()"
-  #investmentForm="ngForm"
->
+<form class="user-input-form" (ngSubmit)="onSubmit()" #investmentForm="ngForm">
   <div class="input-group">
     <p>
       <label for="investment-amount">Initial Investment Amount:</label>
