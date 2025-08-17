@@ -1,6 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, signal, input } from '@angular/core';
 import { CommonModule, CurrencyPipe } from '@angular/common';
-import { InvestmentResults } from '../../interfaces/investment-results';
+import { InvestmentResults } from '../../interfaces/investment-results.dto';
 
 @Component({
   selector: 'app-investment-results',
@@ -10,5 +10,5 @@ import { InvestmentResults } from '../../interfaces/investment-results';
   styleUrls: ['./investment-results.component.css'],
 })
 export class InvestmentResultsComponent {
-  @Input() investmentResults?: InvestmentResults[];
+  investmentResults = input<InvestmentResults[] | undefined>(undefined);
 }

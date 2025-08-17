@@ -1,6 +1,6 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, output, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InvestmentReturn } from '../../interfaces/investment-return';
+import { InvestmentReturn } from '../../interfaces/investment-return.dto';
 import { InvestmentInput } from '../../interfaces/investment-input.dto';
 
 @Component({
@@ -11,25 +11,30 @@ import { InvestmentInput } from '../../interfaces/investment-input.dto';
   styleUrls: ['./user-input.component.css'],
 })
 export class UserInputComponent {
-  @Output() calculate = new EventEmitter<InvestmentInput>();
-  @Input() initialInvestment: number = 10000;
-  @Input() annualInvestment: number = 1000;
-  @Input() interestRate: number = 4;
-  @Input() duration: number = 5;
+  calculate = output<InvestmentInput>();
+  initialInvestment = signal(0);
+  annualInvestment = signal(0);
+  expectedReturn = signal(4);
+  duration = signal(5);
+
   investmentResults: InvestmentReturn[] = [];
 
   onSubmit() {
     this.calculate.emit({
-      initialInvestment: +this.initialInvestment, // + to convert string to number
-      annualInvestment: +this.annualInvestment,
-      expectedReturn: +this.interestRate,
-      duration: +this.duration,
+      initialInvestment: +this.initialInvestment(),
+      annualInvestment: +this.annualInvestment(),
+      expectedReturn: +this.expectedReturn(),
+      duration: +this.duration(),
     });
     console.log('Form submitted with values:', {
-      initialInvestment: this.initialInvestment,
-      annualInvestment: this.annualInvestment,
-      interestRate: this.interestRate,
-      duration: this.duration,
+      initialInvestment: this.initialInvestment(),
+      annualInvestment: this.annualInvestment(),
+      expectedReturn: this.expectedReturn(),
+      duration: this.duration(),
     });
+    this.initialInvestment.set(0);
+    this.annualInvestment.set(0);
+    this.expectedReturn.set(4);
+    this.duration.set(5);
   }
 }
