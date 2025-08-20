@@ -1,6 +1,6 @@
-import { Component, signal, input } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule, CurrencyPipe } from '@angular/common';
-import { InvestmentResults } from '../../interfaces/investment-results.dto';
+import { InvestmentService } from '../../services/investment.service';
 
 @Component({
   selector: 'app-investment-results',
@@ -10,5 +10,11 @@ import { InvestmentResults } from '../../interfaces/investment-results.dto';
   styleUrls: ['./investment-results.component.css'],
 })
 export class InvestmentResultsComponent {
-  investmentResults = input<InvestmentResults[] | undefined>(undefined);
+  constructor(private investmentService: InvestmentService) {}
+
+  // This component is currently empty, but you can add methods and properties
+  // to handle the display of investment results as needed.
+  get results() {
+    return this.investmentService.resultData;
+  }
 }
