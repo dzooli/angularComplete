@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, signal } from '@angular/core';
 import { InvestmentInput } from '../interfaces/investment-input.dto';
 import { InvestmentResults } from '../interfaces/investment-results.dto';
 
@@ -6,7 +6,8 @@ import { InvestmentResults } from '../interfaces/investment-results.dto';
   providedIn: 'root',
 })
 export class InvestmentService {
-  resultData?: InvestmentResults[];
+  resultData = signal<InvestmentResults[]>([]);
+
   constructor() {}
 
   calculateInvestmentResults(data: InvestmentInput) {
@@ -34,6 +35,6 @@ export class InvestmentService {
     }
 
     console.log('Investment results calculated:', annualData);
-    this.resultData = annualData;
+    this.resultData.set(annualData);
   }
 }
