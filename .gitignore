@@ -54,3 +54,7 @@ Thumbs.db
 *.lzma
 *.z
 *.lzop
+
+**/test-results/*
+**/report*
+test-results/.last-run.json

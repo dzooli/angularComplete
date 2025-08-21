@@ -7,7 +7,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "e2e": "playwright test",
+    "e2e:ui": "playwright test --ui",
+    "e2e:report": "playwright show-report test-e2e/report"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +27,7 @@
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^19",
+    "@angular-devkit/build-angular": "^18",
     "@angular/cli": "^18",
     "@angular/compiler-cli": "^18",
     "@types/jasmine": "~5.1.0",
@@ -34,6 +37,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.4.2"
+    "typescript": "~5.4.2",
+    "@playwright/test": "^1.46.0"
   }
 }
