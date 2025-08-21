@@ -1,5 +1,4 @@
 import { Component, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { InvestmentReturn } from '../../interfaces/investment-return.dto';
 import { InvestmentService } from '../../services/investment.service';
 

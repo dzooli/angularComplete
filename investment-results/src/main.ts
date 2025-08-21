@@ -1,8 +1,7 @@
-import { bootstrapApplication } from '@angular/platform-browser';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app/app.module';
 
-import { AppComponent } from './app/app.component';
-
+// Bootstrapping AppModule ensures FormsModule (via UserInputModule) is loaded -> ngModel works with signals bridge.
 platformBrowserDynamic()
-  .bootstrapModule(AppComponent)
+  .bootstrapModule(AppModule)
   .catch((err) => console.error(err));

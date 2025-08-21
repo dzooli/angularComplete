@@ -5,7 +5,8 @@
       <input
         type="number"
         id="investment-amount"
-        [(ngModel)]="initialInvestment"
+        [ngModel]="initialInvestment()"
+        (ngModelChange)="initialInvestment.set($event)"
         name="initialInvestment"
         required
       />
@@ -15,7 +16,8 @@
       <input
         type="number"
         id="annual-investment-amount"
-        [(ngModel)]="annualInvestment"
+        [ngModel]="annualInvestment()"
+        (ngModelChange)="annualInvestment.set($event)"
         name="annualInvestment"
         required
       />
@@ -28,7 +30,8 @@
       <input
         type="number"
         id="interest-rate"
-        [(ngModel)]="expectedReturn"
+        [ngModel]="expectedReturn()"
+        (ngModelChange)="expectedReturn.set($event)"
         name="interestRate"
         required
       />
@@ -38,7 +41,8 @@
       <input
         type="number"
         id="duration"
-        [(ngModel)]="duration"
+        [ngModel]="duration()"
+        (ngModelChange)="duration.set($event)"
         name="duration"
         required
       />
