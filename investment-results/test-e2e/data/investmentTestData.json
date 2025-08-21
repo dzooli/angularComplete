@@ -1,0 +1,131 @@
+[
+    {
+        "scenario": "3 year sample",
+        "initialInvestment": 1000,
+        "annualInvestment": 500,
+        "interestRate": 5,
+        "duration": 3,
+        "expectedRows": [
+            {
+                "year": 1,
+                "investmentValue": 1500.00,
+                "totalInterests": 50.00,
+                "totalValue": 1550.00
+            },
+            {
+                "year": 2,
+                "investmentValue": 2000.00,
+                "totalInterests": 127.50,
+                "totalValue": 2127.50
+            },
+            {
+                "year": 3,
+                "investmentValue": 2500.00,
+                "totalInterests": 233.88,
+                "totalValue": 2733.88
+            }
+        ]
+    },
+    {
+        "scenario": "single year",
+        "initialInvestment": 2000,
+        "annualInvestment": 0,
+        "interestRate": 10,
+        "duration": 1,
+        "expectedRows": [
+            {
+                "year": 1,
+                "investmentValue": 2000.00,
+                "totalInterests": 200.00,
+                "totalValue": 2200.00
+            }
+        ]
+    },
+    {
+        "scenario": "zero annual contribution",
+        "initialInvestment": 1500,
+        "annualInvestment": 0,
+        "interestRate": 4,
+        "duration": 2,
+        "expectedRows": [
+            {
+                "year": 1,
+                "investmentValue": 1500.00,
+                "totalInterests": 60.00,
+                "totalValue": 1560.00
+            },
+            {
+                "year": 2,
+                "investmentValue": 1500.00,
+                "totalInterests": 122.40,
+                "totalValue": 1622.40
+            }
+        ]
+    },
+    {
+        "scenario": "zero interest rate",
+        "initialInvestment": 800,
+        "annualInvestment": 200,
+        "interestRate": 0,
+        "duration": 3,
+        "expectedRows": [
+            {
+                "year": 1,
+                "investmentValue": 1000.00,
+                "totalInterests": 0.00,
+                "totalValue": 1000.00
+            },
+            {
+                "year": 2,
+                "investmentValue": 1200.00,
+                "totalInterests": 0.00,
+                "totalValue": 1200.00
+            },
+            {
+                "year": 3,
+                "investmentValue": 1400.00,
+                "totalInterests": 0.00,
+                "totalValue": 1400.00
+            }
+        ]
+    },
+    {
+        "scenario": "longer duration small interest",
+        "initialInvestment": 500,
+        "annualInvestment": 100,
+        "interestRate": 2,
+        "duration": 5,
+        "expectedRows": [
+            {
+                "year": 1,
+                "investmentValue": 600.00,
+                "totalInterests": 10.00,
+                "totalValue": 610.00
+            },
+            {
+                "year": 2,
+                "investmentValue": 700.00,
+                "totalInterests": 22.20,
+                "totalValue": 722.20
+            },
+            {
+                "year": 3,
+                "investmentValue": 800.00,
+                "totalInterests": 36.64,
+                "totalValue": 836.64
+            },
+            {
+                "year": 4,
+                "investmentValue": 900.00,
+                "totalInterests": 53.38,
+                "totalValue": 953.38
+            },
+            {
+                "year": 5,
+                "investmentValue": 1000.00,
+                "totalInterests": 72.44,
+                "totalValue": 1072.44
+            }
+        ]
+    }
+]
