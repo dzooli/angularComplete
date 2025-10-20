@@ -38,6 +38,6 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.4.2",
-    "@playwright/test": "^1.46.0"
+    "@playwright/test": "^1.56.1"
   }
 }
