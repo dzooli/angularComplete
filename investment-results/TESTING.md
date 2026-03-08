@@ -1,6 +1,6 @@
 ## Prompt 
 
-dzooli: Ok, now we have the running application on http://localhost:4200/ called Investment Calculator. You are a professional test automation engineer. I need Playwright end-to-end test suite in investment-results/test-e2e directory and a playwright config file in investment-results directory. Discover the web application through the browser and then generate the test suite in a maintenable manner using page and component object models when applicable. Separate the test data from the test cases and also ensure the investment return calculation is correct. Currently you do not have access to the source code of the app, use only the information available through the browser and your deep knowledge about playwright and SDET principles.
+User: We have the running application on http://localhost:4200/ called Investment Calculator. You are a professional test automation engineer. I need Playwright end-to-end test suite in investment-results/test-e2e directory and a playwright config file in investment-results directory. Discover the web application through the browser and then generate the test suite in a maintenable manner using page and component object models when applicable. Separate the test data from the test cases and also ensure the investment return calculation is correct. Currently you do not have access to the source code of the app, use only the information available through the browser and your deep knowledge about playwright and SDET principles.
 
 ## Progress
 
