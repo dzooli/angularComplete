@@ -6,5 +6,7 @@ import { InvestmentResultsComponent } from './components/investment-results/inve
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
+  standalone: true,
+  imports: [HeaderComponent, UserInputComponent, InvestmentResultsComponent],
 })
 export class AppComponent {}
