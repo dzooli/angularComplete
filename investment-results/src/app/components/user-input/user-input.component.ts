@@ -11,10 +11,10 @@ import { InvestmentService } from '../../services/investment.service';
   imports: [FormsModule],
 })
 export class UserInputComponent {
-  initialInvestment = signal(0);
-  annualInvestment = signal(0);
-  expectedReturn = signal(4);
-  duration = signal(5);
+  initialInvestment = signal<number>(0);
+  annualInvestment = signal<number>(0);
+  expectedReturn = signal<number>(4);
+  duration = signal<number>(5);
 
   investmentResults: InvestmentReturn[] = [];
 
