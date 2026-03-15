@@ -18,7 +18,7 @@ export class UserInputComponent {
 
   investmentResults: InvestmentReturn[] = [];
 
-  constructor(private investmentService: InvestmentService) {}
+  constructor(private readonly investmentService: InvestmentService) {}
 
   onSubmit() {
     this.investmentService.calculateInvestmentResults({
