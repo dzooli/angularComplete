@@ -58,4 +58,5 @@ Thumbs.db
 **/test-results/*
 **/report*
 test-results/.last-run.json
-06-cmp-deep-dive
+06-cmp-deep-dive/
+
