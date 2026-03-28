@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DashboardItemComponent } from './components/dashboard/dashboard-item/dashboard-item.component';
 import { ServerStatusComponent } from './components/dashboard/server-status/server-status.component';
 import { TicketsComponent } from './components/dashboard/tickets/tickets.component';
 import { TrafficComponent } from './components/dashboard/traffic/traffic.component';
@@ -12,6 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
     ServerStatusComponent,
     TrafficComponent,
     TicketsComponent,
+    DashboardItemComponent,
   ],
   templateUrl: './app.component.html',
 })

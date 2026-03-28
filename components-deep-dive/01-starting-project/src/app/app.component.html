@@ -2,14 +2,23 @@
 
 <main>
   <div id="dashboard">
-    <div class="dashboard-item">
+    <app-dashboard-item
+      title="Server Status"
+      [icon]="{ src: 'status.png', alt: 'A server status symbol' }"
+    >
       <app-server-status />
-    </div>
-    <div class="dashboard-item">
+    </app-dashboard-item>
+    <app-dashboard-item
+      title="Traffic"
+      [icon]="{ src: 'globe.png', alt: 'A globe symbol' }"
+    >
       <app-traffic />
-    </div>
-    <div class="dashboard-item">
+    </app-dashboard-item>
+    <app-dashboard-item
+      title="Tickets"
+      [icon]="{ src: 'list.png', alt: 'A list of items symbol' }"
+    >
       <app-tickets />
-    </div>
+    </app-dashboard-item>
   </div>
 </main>
