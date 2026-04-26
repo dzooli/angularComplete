@@ -1,12 +1,10 @@
 <form>
-  <p>
-    <label for="title_input">Title</label>
+  <app-control label="Title" target="title_input">
     <input type="text" id="title_input" name="title" />
-  </p>
-  <p>
-    <label for="request_input">Description</label>
+  </app-control>
+  <app-control label="Description" target="request_input">
     <textarea id="request_input" name="request" rows="3"></textarea>
-  </p>
+  </app-control>
   <p>
     <button appButton>Create Ticket<span ngProjectAs="icon"> +</span></button>
   </p>
